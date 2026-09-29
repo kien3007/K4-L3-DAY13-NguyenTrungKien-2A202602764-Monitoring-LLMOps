@@ -4,13 +4,13 @@
 
 ## 1. Thông tin học viên
 
-- **Họ và tên:**
-- **MSSV:**
+- **Họ và tên:** Nguyễn Trung Kiên
+- **MSSV:** 2A202602764
 - **Lớp:** K4-L3A
-- **Repository URL:**
-- **Commit SHA cuối:**
-- **Challenge ID:**
-- **Tên project Langfuse cá nhân:** `day13-k4-l3a-<MSSV>`
+- **Repository URL:** https://github.com/kien3007/K4-L3-DAY13-NguyenTrungKien-2A202602764-Monitoring-LLMOps
+- **Commit SHA cuối:** 13b606680ae4a3072eda90334959b632fe4ecba0 (commit baseline)
+- **Challenge ID:** (Chờ mở tại CP3)
+- **Tên project Langfuse cá nhân:** `day13-k4-l3a-2A202602764`
 
 ## 2. Evidence index
 
@@ -37,13 +37,13 @@
 
 | Nội dung | Baseline | Kết quả cuối | Nhận xét |
 |---|---|---|---|
-| `validate_logs.py` | | | |
-| `validate_dashboard.py` | | | |
-| `pytest` | | | |
-| Số traces hợp lệ | | | |
-| Số PII leak | | | |
-| Latency P95 / TTFT P95 | | | |
-| Retrieval success rate | | | |
+| `validate_logs.py` | 30/100 | | Baseline chưa implement middleware correlation ID và context enrichment (bình thường ở CP0) |
+| `validate_dashboard.py` | HỢP LỆ (6/6 panel) | | Đạt 6/6 panel theo contract `config/dashboard.yaml` |
+| `pytest` | 22 passed (100%) | | Toàn bộ 22 public unit tests ban đầu passed |
+| Số traces hợp lệ | 10 traces | | 10 root observation traces ghi nhận thành công trên project Langfuse cá nhân |
+| Số PII leak | 0 leak | | Validator chưa phát hiện raw PII leak trong log |
+| Latency P95 / TTFT P95 | 7100 ms / 64 ms | | Latency P95 do fake LLM delay (2.5s - 7.5s); TTFT ~60ms |
+| Retrieval success rate | 100% (20/20) | | 100% tool retrieval thành công trên các test queries |
 
 ## 4. Logging và PII
 
