@@ -8,7 +8,7 @@
 - **MSSV:** 2A202602764
 - **Lớp:** K4-L3A
 - **Repository URL:** https://github.com/kien3007/K4-L3-DAY13-NguyenTrungKien-2A202602764-Monitoring-LLMOps
-- **Commit SHA cuối:** 13b606680ae4a3072eda90334959b632fe4ecba0 (commit baseline)
+- **Commit SHA cuối:** 0baae105a3aff4ff6da1d74d3a1419f5e07cc8b2
 - **Challenge ID:** day13-k4-l3a-monitoring-llmops-v1
 - **Tên project Langfuse cá nhân:** `day13-k4-l3a-2A202602764`
 
